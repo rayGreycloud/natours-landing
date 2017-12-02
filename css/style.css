@@ -90,22 +90,22 @@ body {
     margin-bottom: 3rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom-large {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-top-large {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-top-xlarge {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem !important; }
 
 .bg-video {
   position: absolute;
@@ -121,7 +121,7 @@ body {
     width: 100%;
     object-fit: cover; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
   font-size: 1.6rem;
@@ -129,7 +129,9 @@ body {
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -138,7 +140,8 @@ body {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
