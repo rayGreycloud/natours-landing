@@ -2,7 +2,7 @@
   &,
   &:link,
   &:visited {
-    border-radius: 10rem;
+    border-radius: $border-radius-round;
     display: inline-block;
     font-size: $default-font-size;
     padding: 1.5rem 4rem;
