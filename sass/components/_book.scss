@@ -1,24 +1,61 @@
 .book {
   background-image: 
     linear-gradient(105deg, 
-    rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), 
-    url(../img/nat-10.jpg);
+    rgba($color-white, .9) 0%, 
+    rgba($color-white, .9) 50%, 
+    transparent 50%), 
+    url(../img/nat-10-small.jpg);
   background-size: cover;
   border-radius: $border-radius-reg;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
   
+  @include responsive(big-desktop) {
+    background-image: 
+      linear-gradient(105deg, 
+      rgba($color-white, .9) 0%, 
+      rgba($color-white, .9) 50%, 
+      transparent 50%), 
+      url(../img/nat-10.jpg);
+  }
+  
   @include responsive(tab-land) {
     background-image: 
       linear-gradient(105deg, 
-      rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, transparent 65%), 
-      url(../img/nat-10.jpg);    
+      rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, 
+      transparent 65%), 
+      url(../img/nat-10-small.jpg);    
   }
   
   @include responsive(tab-port) {
     background-image: 
       linear-gradient(to right, 
       rgba($color-white, .9) 0%, rgba($color-white, .9) 100%), 
-      url(../img/nat-10.jpg);        
+      url(../img/nat-10-small.jpg);        
+  }
+  
+  @media (min-resolution: 192dpi) and (min-width: 1201px) and (max-width: 1800px) {
+    background-image: 
+      linear-gradient(105deg, 
+      rgba($color-white, .9) 0%, 
+      rgba($color-white, .9) 50%, 
+      transparent 50%), 
+      url(../img/nat-10.jpg);    
+    }
+  
+  @media (min-resolution: 192dpi) and (min-width: 901px) and (max-width: 1200px) {
+    background-image: 
+      linear-gradient(105deg, 
+      rgba($color-white, .9) 0%, rgba($color-white, .9) 65%, 
+      transparent 65%), 
+      url(../img/nat-10.jpg);    
+  }
+  
+  @media (min-resolution: 192dpi) and (min-width: 601px) and (max-width: 900px) {
+    background-image: 
+    linear-gradient(to right, 
+    rgba($color-white, .9) 0%, 
+    rgba($color-white, .9) 100%), 
+    url(../img/nat-10.jpg);    
   }
   
   &__form {
