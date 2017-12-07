@@ -40,6 +40,7 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s;    
+    -webkit-backface-visibility: hidden;    
     backface-visibility: hidden;
   }
   
@@ -63,6 +64,7 @@
     text-align: center;
     opacity: 0;
     transition: all .5s;
+    -webkit-backface-visibility: hidden;    
     backface-visibility: hidden;
   }
   
