@@ -154,9 +154,10 @@
     font-weight: 100;
   }
   
-  
-// CARD REMAKE FOR MOBILE -- merge sides
-  @include responsive(tab-port) {
+// // CARD REMAKE FOR MOBILE -- merge sides
+//   @include responsive(tab-port) {
+  @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
     height: auto;  
     border-radius: $border-radius-reg;    
     background-color: $color-white;
